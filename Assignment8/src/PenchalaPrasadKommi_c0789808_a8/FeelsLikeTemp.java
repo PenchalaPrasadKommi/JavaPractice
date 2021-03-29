@@ -37,8 +37,8 @@ public class FeelsLikeTemp {
     public static void main(String[] args) {
         JOptionPane.showMessageDialog(null,"Welcome to Feels Like Temperature Calculator!");
         String inp = JOptionPane.showInputDialog("Please enter the day of the week, temperature in celsius and wind speed in mph separated by spaces in between");
-        ArrayList<String> inpValues = new ArrayList<String>(); //using ArrayList
-        for(String s: inp.split(" ")) //inp.split(" ") returns an array of Strings
+        ArrayList<String> inpValues = new ArrayList<String>();
+        for(String s: inp.split(" "))
             inpValues.add(s);
         String day = inpValues.get(0).toLowerCase();
         int temperature = Integer.parseInt(inpValues.get(1));

@@ -27,7 +27,6 @@ class User{
         this.accountNo = accountNo;
         String fileName = accountNo +".txt";
         File file = new File(fileName);
-        //System.out.println("File Exists? "+file.exists());
         if(!file.exists()) {
             try {
                 FileWriter fileWriter = new FileWriter(fileName, false);
